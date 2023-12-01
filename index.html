@@ -1,0 +1,190 @@
+<!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+<!-- https://cdnjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Awesome Blog</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#mobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mobile" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blogs.html" class="nav-link">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!-- 
+                    <div class="row g-1">
+                        <div class="col-8">
+                            <input type="text" class="form-control me-1">
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-warning">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div> 
+                -->
+                <form class="d-flex">   <!-- d-flex => display:flex  -->
+                    <input type="text" class="form-control me-1" placeholder="Search">
+                    <button class="btn btn-warning">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="text-center pt-5 mt-5 px-4 border-bottom">
+            <h1 class="display-4 fw-bold">Example Blog</h1>
+            <div class="col-md-6 mx-auto">
+                <p class="lead mb-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis in optio quia iusto temporibus? Veniam distinctio autem sunt at harum?
+                </p>
+            </div>
+            <div class="mb-5 d-grid gap-3 d-sm-flex justify-content-center">
+                <button class="btn btn-primary btn-lg">
+                    <i class="fa-solid fa-caret-right"></i>Button</button>
+                <button class="btn btn-outline-secondary btn-lg">
+                    <i class="fa-solid fa-caret-right"></i>Button</button>
+            </div>
+            <!-- overflow-hidden => max height degerinden sonra resimdeki tasma olan kismi siler. -->
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="./img/bg.png" class="img-fluid border rounded-3 shadow-lg mb-4" width="700" height="500" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="bg-dark px-4 py-5 text-center text-white">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold">Lorem, ipsum.</h1>
+                <div class="col-md-6 mx-auto">
+                    <p class="lead mb-4">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis in optio quia iusto temporibus? Veniam distinctio autem sunt at harum?
+                    </p>
+                </div>
+                <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                    <button class="btn btn-outline-warning btn-lg">
+                        <i class="fa-solid fa-caret-right"></i>Button</button>
+                    <button class="btn btn-outline-light btn-lg">
+                        <i class="fa-solid fa-caret-right"></i>Button</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- "col-lg-3 col-md-4 col-sm-6" class tanimlamasinda alternatif yontem. -->
+                <div class="col">
+                    <div class="card mb-3 shadow">
+                        <img src="./img/1.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ut!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 shadow">
+                        <img src="./img/2.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ut!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 shadow">
+                        <img src="./img/3.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ut!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 shadow">
+                        <img src="./img/4.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ut!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 shadow">
+                        <img src="./img/5.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ut!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 shadow">
+                        <img src="./img/6.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ut!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 shadow">
+                        <img src="./img/7.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ut!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <span class="footer-sp">Copyright 2023. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
